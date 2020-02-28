@@ -3,7 +3,8 @@
   <button type="button" class="btn btn-default btn-lg">大的按钮</button>
 </p>
 <app-test></app-test> -->
-<app-header></app-header>
+<!-- 练习项目部分 -->
+<!-- <app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -11,4 +12,26 @@
       <app-shopping-list></app-shopping-list>
     </div>
   </div>
+</div> -->
+<!-- 数据传递部分 -->
+<app-data-com></app-data-com>
+<div class="row">
+  <!-- 两种写法 -->
+  <h3 appHighLight="yellow" defaultColor="green">用来测试自定义指令的标签</h3>
+  <!-- <h3 [appHighLight]="'yellow'" [defaultColor]="'green'">用来测试自定义指令的标签</h3> -->
+</div>
+<!-- 用来测试自定义语法糖指令 -->
+<button type="button" class="btn btn-primary btn-lg" (click)="forDireCTest()">大的原始按钮</button>
+<p *appUnless="flag">111111</p>
+<p *appUnless="!flag">22222</p>
+<p>33333</p>
+
+
+<div class="row">
+    <div [ngSwitch]="number">
+      <p *ngSwitchCase="100">这里要展示的值是100</p>
+      <p *ngSwitchCase="300">这里要展示的值是300</p>
+      <p *ngSwitchCase="700">这里要展示的值是700</p>
+      <p *ngSwitchDefault>这里要展示的值是默认值</p>
+    </div>
 </div>

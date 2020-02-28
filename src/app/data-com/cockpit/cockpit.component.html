@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-12">
+        <p>添加一个新的服务或者蓝图</p>
+        <label for="">服务名称</label>
+        <input appHighLight type="text" [(ngModel)]="newServerName" class="form-control">
+        <!-- 对象的本地指向 -->
+        <!-- <input type="text" #serverNameInput class="form-control"> -->
+        <label for="">服务内容</label>
+        <input type="text" [(ngModel)]="newServerContent" #content class="form-control">
+        <br/>
+        <button (click)="onAddServer()" class="btn btn-primary">添加服务</button>
+        <button (click)="onAddBlueprint()" class="btn btn-primary">添加服务蓝图</button>
+        <!-- 对象的本地指向 -->
+        <!-- <button (click)="onAddServer(serverNameInput)" class="btn btn-primary">添加服务</button> -->
+        <!-- <button (click)="onAddBlueprint(serverNameInput)" class="btn btn-primary">添加服务蓝图</button> -->
+    </div>
+</div>

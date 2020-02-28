@@ -13,6 +13,11 @@ import { RecipesDetailComponent } from './recipes/recipes-detail/recipes-detail.
 import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { DataComComponent } from './data-com/data-com.component';
+import { CockpitComponent } from './data-com/cockpit/cockpit.component';
+import { ServerElementComponent } from './data-com/server-element/server-element.component';
+import { HighLightDirective } from './high-light/high-light.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipesDetailComponent,
     RecipesItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    DataComComponent,
+    CockpitComponent,
+    ServerElementComponent,
+    HighLightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestObject } from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular4';
+  flag:boolean = true;
+  number:number = 100;
+  forDireCTest(){
+    this.flag = false;
+    this.number = 111;
+  }
 }
