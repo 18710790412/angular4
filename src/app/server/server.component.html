@@ -37,4 +37,4 @@
   <p [ngStyle]="{backgroundColor:getColor2()}" [ngClass]="{styleTest: directives === '否'}">这个使用来测试样式指令用的</p>
 
 
-<p *ngFor="item of forArr; let i=index" [ngStyle]="{color: i >= 3 ? 'blue' : 'pink'}">这个是用来测试ngFor循环指令的</p>
+<p *ngFor="let item of forArr; let i=index" [ngStyle]="{color: i >= 3 ? 'blue' : 'pink'}">这个是用来测试ngFor循环指令的</p>
